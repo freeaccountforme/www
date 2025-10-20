@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Восстание Хмельницкого</title>
+    <style>
+        .nav-active {
+            background-color: #ffbe31;
+            font-weight: bold;
+            color: #000;
+            padding: 5px;
+            border-radius: 3px;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: #333;
+            padding: 5px;
+            display: block;
+        }
+
+        ul li a:hover {
+            background-color: #e0e0e0;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Генеалогическая анкета</h1>
+    <ul>
+        <li><a href="https://ageiron.ru/armii-i-soldatyi/armii-i-soldatyi-armii-i-soldatyi/vostochnaya-evropa/hronologiya-vosstaniya-bogdana-hmelniczkogo-1648-1654-g-g" target="_blank">Хронология событий</a></li>
+        <li><a href="https://www.realmadrid.com/en-US" target="_blank"><img src="Real.png" height="30px"></a></li>
+        <li><a href="form.html" target="_blank">Ваш предок участвовал в востании?</a></li>
+        <li><a href="team.html" target="_blank">Реестр Войска Запорожского 1649 г.</a></li>
+        <li><a href="index.html#figures" target="_self">Ключевые фигуры</a></li>
+        <li><a href="index.html#others" target="_self">Другие рекордсмены клуба</a></li>
+        <li><a href="index.html#Real" target="_self" class="nav-active">Вернуться в начало</a></li>
+    </ul>
+
+    <br><br>
+
+    <h2 align="center">Данные об участнике восстания</h2>
+    <!--<form action="../../cgi-bin/form_action.py" method='get' target='_self'>-->
+    <!--<form action="http://185.182.111.214:7628/cgi-bin/form_action.py" method='get' target='_self'>-->
+    <form action="https://www.google.com/" id="UserEnter" name="UserEnter" target="_blank" align="center">
+        <p>Введите данные:<input type="hidden" name="q"></p>
+        <p>Фамилия и имя: <input type="Text" name="last_name" size=20 value="Богдан Хмельницкий"></p>
+        <p>Год рождения: <input type="Number" name="age" size=20 value="1595"></p>
+        <p>Место рождения: <input type="Text" name="country" size=20 value="Суботов"></p>
+        <p>Наименование полка: <input type="Text" name="club" size=20 value="Чигиринский"></p>
+        <p>Вид войска:
+            <input type="Radio" name="place" value="reestr">Реестровое
+            <input type="Radio" name="place" value="notreestr" checked>Нереестровое
+        </p>
+
+
+        <p id="FIFA"> Дополнительная информация:
+            <br>
+            <TEXTAREA cols=80 rows=4 name="textarea">Другие данные о предке</TEXTAREA>
+        </p>
+
+        <!--Все нижерасположенные фрагменты перемещать нельзя, редактировать можно-->
+        <p>Войсковая должность: <input type="Техт" name="000_file_name" value="Гетман" size='30'></p>
+
+        <p> Сословие:<select name="010_mode">
+            <OPTION value="p">Выбор</OPTION>
+                <OPTION value="a">Войсковая старшина</OPTION>
+                <OPTION value="w">Войсковой служитель</OPTION>
+                <OPTION value="l">Рядовой казак</OPTION>
+                <OPTION value="x">Посполитый</OPTION>
+            </select></p>
+
+        <input type="hidden" name="function" value="page">
+        <input type="hidden" name="page_id" value="3">
+
+        <p>
+            <input type="Reset" name="Reset" value="Обновить">
+            <input type="Submit" name="submit" value="Отправить">
+        </p>
+    </form>
+</body>
+
+</html>
